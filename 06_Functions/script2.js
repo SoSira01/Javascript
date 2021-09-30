@@ -1,7 +1,6 @@
 // The following let variables are defined in the global scope
 let mid = 20;
 let final = 5;
-
 let fname = 'Ada';
 
 //sum function is defined in the global scope
