@@ -2,6 +2,7 @@
 let num1=10;
 let num2=20;
 num2=num1; //num1 assign to value 10 num2 
+console.log(num2);
 num2=55;
 console.log(num1);
 console.log(num2);
@@ -54,7 +55,7 @@ let colors = [
   console.log(colors.length - 1);
   console.log(colors[0][colors[0].length - 1]);
   console.log(colors[colors.length - 1][colors[1].length - 1]);
-  //#7
+//#7
   let students = [
     { id: 1, name: 'Ann' },
     { id: 2, name: 'Peter' },

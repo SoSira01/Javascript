@@ -20,22 +20,24 @@ let myStudents = myClassStudents(
 console.log(myStudents);
 console.log(myStudents.length);
 
-//destructuring object
+//destructuring objecte
 let { firstname, lastname, ...address } = {
   firstname: 'Umaporn',
   lastname: 'Supa',
   province: 'Bangkok',
   contact: '02-470-9810'
 };
-function yourAddress(addr) {
-  return addr;
-}
-console.log(yourAddress(address));
+// function yourAddress(addr) {
+//   return addr;
+// }
+let yourAddress = addr => addr
+console.log(yourAddress = address);
 
 //copy object properties with spread operator
 
 let std1 = { id: 1, name: 'Adam' };
 let std2 = { ...std1 };
 std2.id = 444;
+
 console.log(std1);
 console.log(std2);
