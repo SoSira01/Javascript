@@ -40,11 +40,7 @@ function Min(){      //find min by declare 2 variable. one for collect the small
   return min;
 }
 
-function T(){
-    return `Random Number = ${randomNum()}`+
-         `\nSum = ${Sum()}`+
-         `\nMax = ${Max()}`+
-         `\nMin = ${Min()}`;
-}
-
-console.log(T());
+console.log(`Random Number = ${randomNum()}`);
+console.log(`Sum = ${Sum()}`);
+console.log(`Max = ${Max()}`);
+console.log(`Min = ${Min()}`);
