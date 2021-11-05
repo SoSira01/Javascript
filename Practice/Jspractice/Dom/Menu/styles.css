@@ -1,0 +1,36 @@
+body {
+  margin: 5%;
+}
+
+.search-box {
+  width: 40px;height: 40px;
+  border-radius: 20px;border: none;
+  cursor: pointer;
+  background: rgb(235, 235, 235);
+}
+  :hover {
+    color: white;
+    background: rgb(200, 200, 200);
+    box-shadow: 0 0 0 5px rgb(61, 71, 82);
+  }
+  :focus {
+    transition: width cubic-bezier(0,1.22,.66,1.39);
+    border: none;outline: none;
+    box-shadow: none;
+    padding-left: 15px;
+    cursor: text;
+    width: 300px;
+    border-radius: auto;
+    background: rgb(235, 235, 235);
+    color: black;
+  }
+#search-submit {
+  position: relative;left: -5000px;
+}
+
+.search-icon {
+  position: relative;
+  left: -30px;
+  color: white;
+  cursor: pointer;
+}
