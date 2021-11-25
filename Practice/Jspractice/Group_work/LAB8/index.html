@@ -31,25 +31,36 @@
     <hr style="width:90%; margin: 0 5% 0 5%;" >
     
     <div id = 'searchAndCart' class="container col-10 d-flex align-items-center mt-3" >
-          <i id = 'searchIcon', class='bx bx-search bx-sm me-3'></i>
-          <div id = 'searchBar' class="d-flex align-items-center me-auto"> 
-            <!-- <input id = 'inputValue' type = 'text' placeholder="search">
-            <button type="button" class="btn btn-primary btn-sm">search</button> -->
+          <i id = 'searchIcon' class='bx bx-search bx-sm me-3' style="cursor:pointer"></i>
+          <div id = 'searchBar' class="d-flex align-items-center me-auto" > 
+            <input id = 'inputValue' type = 'text' placeholder=" search ..." class = "form-control" style="display: none;">
+            <button id = 'searchBtn' type="button" class="btn btn-danger btn-sm ms-3" style="display: none;">search</button>
           </div>
 
           <div id = 'cart'  class="d-flex align-items-center ">
             <div class="d-inline-flex align-self-center me-2">Your Cart</div>
-            <i id = 'cartIcon' class='bx bx-cart bx-sm'></i>
+            <i id = 'cartIcon' class='bx bx-cart bx-sm' style="cursor: pointer;"></i>
             <span id = 'amount' class = 'mx-auto border rounded-circle align-items-center d-flex justify-content-center bg-warning border border-2 border-dark' style ='width: 28px; height: 28px;'>0</span>
             <button id = 'clearBtn' type="button" class="btn btn-outline-dark btn-sm ms-2">clear</button>
 
           </div>
         
     </div>
+
     
+
+
     <div id="allMenu" style="display: flex; justify-content: left; margin: 25px 50px;" class = 'container row justify-content-center mx-auto'>
-      
+        <!-- <div id="" class="card-body" style="border:1px solid black; margin:10px; border-radius:20px; max-width: 400px; background-color: SeaShell">
+          <img class="card-img-top" src="" style="width:300px; padding:20px; display: block; margin: auto;">
+          <h4  class="card-title" style="color:red;"></h4>  
+          <p id="menuDesc" class="card-text"></p>
+          <p id="menuStatus" class="card-text"></p>
+          <div id="menuPrice" class="d-inline-flex px-4 py-1 mb-3 rounded-3 border border-dark rounded-3 border-2 fw-bold"></div>
+          <button id="addMenuBtn" type = "button" class = "buttonAdd container btn btn-danger"></button>
+      </div> -->
     </div>
+
 
     <div id = "myModal" class="modal" tabindex="-1">
       <div class="modal-dialog">
@@ -75,9 +86,6 @@
 
     <script src="script.js" type="module"></script>
     <script src="bgcolor.js" type="module"></script>
-
-    <!-- <div id = 'allMenu' class = "container row mx-auto my-5"></div>
-    <script src="product-list2.js" type="module"></script> -->
 
   </body>
 </html>
