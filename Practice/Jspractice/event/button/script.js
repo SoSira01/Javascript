@@ -23,4 +23,3 @@ function showSearchBar(){   
     console.log(searchForm.style.display);  
    }  
 }
-
