@@ -11,9 +11,8 @@ function removeImage() {
 }
 
 thumbnailImages.forEach((thumbnail) => {
-  //thumbnail.addEventListener('mouseout', removeImage);
+  thumbnail.addEventListener('mouseout', removeImage);
   thumbnail.addEventListener('mouseover', changeImage);
-  buttonClick.addEventListener('click', removeImage);
 });
 
 //addEventListener('click', removeImage);
