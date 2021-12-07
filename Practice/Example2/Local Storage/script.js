@@ -7,8 +7,7 @@ function clickCounter() {
       } else {
         localStorage.clickcount = 1;
       }
-      const results = document.getElementById("result");
-      results.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+      showClick();
 
   }
 
@@ -16,10 +15,14 @@ function clickCounter() {
     if (localStorage.clickcount) {
         localStorage.clickcount = 0;
     } 
-    
-    const results = document.getElementById("result");
-    results.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
+    showClick();
+}
+
+function showClick(){
+  const results = document.getElementById("result");
+  results.innerHTML = "You have clicked the button " + localStorage.clickcount + " time(s).";
 }
 
 clicker.addEventListener('click',clickCounter);
 deleteclicker.addEventListener('click',clickDelete);
+showClick();
