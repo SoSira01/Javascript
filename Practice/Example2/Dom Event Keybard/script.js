@@ -4,8 +4,8 @@ let imageLinks = ['photo/harley-01.jpg',
                   'photo/harley-03.jpg'];
 
 let image = document.querySelector('.image');
-let prev = document.querySelector('.button prev-button');
-let next = document.querySelector('.button next-button');
+let prev = document.getElementById('button prev-button')
+let next = document.getElementById('button next-button');
 
 function prevImage() {
   if (imageIndex > 0) {
@@ -21,5 +21,17 @@ function nextImage() {
   }
 }
 
+function keyup(event) {
+  console.log(event.key)
+  if (event.key === 'ArrowLeft') {
+    prevImage();
+  }
+  else if (event.key === 'ArrowRight') {
+    nextImage();
+  }
+}
+
+document.addEventListener('keyup', keyup);
+
 prev.addEventListener('click', prevImage);
-next.addEventListener('click',nextImage)
+next.addEventListener('click', nextImage);
